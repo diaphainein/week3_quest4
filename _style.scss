@@ -1,0 +1,96 @@
+// Global Styles
+
+// Remove horizontal scroll
+html {
+	overflow-x: hidden;
+}
+
+// Custom Align
+body .align-center-all {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+body .align-vert-center {
+	display:flex;
+	align-items:center;	
+}
+body .align-horiz-left {
+	display:flex;
+	justify-content: flex-start;
+}
+body .align-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+body .align-horiz-right {
+    display: flex;
+    justify-content: flex-end;
+}
+body .align-space-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+// Content
+body .content {
+	padding: 1.5rem 2rem;
+}
+body .content-center {
+	text-align: center;
+}
+body .content-left {
+	text-align: left;
+}
+body .content-right {
+	text-align: right;
+}
+body .block {
+	display: block !important;
+}
+
+// Color Aliases
+$c-white: #ffffff;
+$c-black: #000000;
+
+// Font Aliases
+$f-primary: 'Syne Mono', monospace;
+$f-secondary: 'Open Sans', sans-serif;
+
+// Text 
+.syne-mono {
+    font-family: $f-primary;
+}
+.open-sans {
+    font-family: $f-secondary;
+}
+.white {
+    color: $c-white;
+}
+
+// Images
+.bg-img {
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+// Custom Styles
+body {
+    background-color: $c-black;
+}
+body .col-sm-4,
+body .col-lg-4 {
+    height: 100%;
+}
+body .col-sm-4 {
+    min-height: 250px;
+}
+
+// Responsive
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    body .col-lg-4 {
+        min-height: 650px;
+    }
+ }

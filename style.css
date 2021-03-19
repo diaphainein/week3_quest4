@@ -1,0 +1,93 @@
+html {
+  overflow-x: hidden;
+}
+
+body .align-center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .align-vert-center {
+  display: flex;
+  align-items: center;
+}
+
+body .align-horiz-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+body .align-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body .align-horiz-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+body .align-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+body .content {
+  padding: 1.5rem 2rem;
+}
+
+body .content-center {
+  text-align: center;
+}
+
+body .content-left {
+  text-align: left;
+}
+
+body .content-right {
+  text-align: right;
+}
+
+body .block {
+  display: block !important;
+}
+
+.syne-mono {
+  font-family: "Syne Mono", monospace;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+body {
+  background-color: #000000;
+}
+
+body .col-sm-4,
+body .col-lg-4 {
+  height: 100%;
+}
+
+body .col-sm-4 {
+  min-height: 250px;
+}
+
+@media (min-width: 992px) {
+  body .col-lg-4 {
+    min-height: 650px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
