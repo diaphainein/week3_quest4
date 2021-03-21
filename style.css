@@ -2,6 +2,11 @@ html {
   overflow-x: hidden;
 }
 
+body .max-width {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 body .align-center-all {
   display: flex;
   align-items: center;
@@ -65,27 +70,41 @@ body .block {
   color: #ffffff;
 }
 
+.top-header-1 {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
 .bg-img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
+.img-house img {
+  height: 100%;
+  max-height: 200px;
+}
+
 body {
   background-color: #000000;
 }
 
-body .col-sm-4,
-body .col-lg-4 {
+body .collage {
   height: 100%;
-}
-
-body .col-sm-4 {
   min-height: 250px;
 }
 
 @media (min-width: 992px) {
-  body .col-lg-4 {
+  .top-header-1 {
+    font-size: 45px;
+  }
+
+  .img-house img {
+    max-height: 350px;
+  }
+
+  body .collage {
     min-height: 650px;
   }
 }
