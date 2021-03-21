@@ -3,7 +3,7 @@ html {
 }
 
 body .max-width {
-  max-width: 80%;
+  max-width: 95%;
   margin: 0 auto;
 }
 
@@ -75,6 +75,10 @@ body .block {
   padding-top: 20px;
 }
 
+p.open-sans {
+  line-height: 20px;
+}
+
 .bg-img {
   background-repeat: no-repeat;
   background-position: center center;
@@ -92,10 +96,19 @@ body {
 
 body .collage {
   height: 100%;
-  min-height: 250px;
+  min-height: 300px;
 }
 
+@media (min-width: 768px) {
+  body .collage {
+    min-height: 500px;
+  }
+}
 @media (min-width: 992px) {
+  body .max-width {
+    max-width: 80%;
+  }
+
   .top-header-1 {
     font-size: 45px;
   }
@@ -106,6 +119,11 @@ body .collage {
 
   body .collage {
     min-height: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  body .collage {
+    min-height: 800px;
   }
 }
 

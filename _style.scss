@@ -7,7 +7,7 @@ html {
 
 // Custom Align
 body .max-width {
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
 }
 body .align-center-all {
@@ -75,6 +75,9 @@ $f-secondary: 'Open Sans', sans-serif;
     font-size: 30px;
     padding-top: 20px;
 }
+p.open-sans {
+    line-height: 20px;
+}
 
 // Images
 .bg-img {
@@ -95,12 +98,21 @@ body {
 }
 body .collage {
     height: 100%;
-    min-height: 250px;
+    min-height: 300px;
 }
 
 // Responsive
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    body .collage {
+        min-height: 500px;
+    }
+ }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
+    body .max-width {
+        max-width: 80%;
+    }
     .top-header-1 {
         font-size: 45px;
     }
@@ -111,5 +123,11 @@ body .collage {
     }
     body .collage {
         min-height: 650px;
+    }
+ }
+ // Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    body .collage {
+        min-height: 800px;
     }
  }
